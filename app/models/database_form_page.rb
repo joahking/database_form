@@ -20,7 +20,7 @@ class DatabaseFormPage < Page
       redirect_to = request.parameters[:redirect_to]
 
       if save_form and redirect_to
-        response.redirect(redirect_to, '302') # radiant-0.6.9 action_controller/response.rb:31 second parameter is not optional
+        response.redirect(redirect_to, '302') # radiant-0.6.9 action_controller/response.rb:31 second parameter is not optional 
       else
         super(request, response) 
       end
